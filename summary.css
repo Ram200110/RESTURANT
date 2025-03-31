@@ -1,0 +1,272 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(/images/sumbg.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width:60%;
+    height:500px;
+    margin:8% auto;
+    background:#fff;
+    border-radius:5px;
+    position:relative;
+    overflow: hidden;
+}
+h3{
+    text-align: center;
+    margin-bottom: 40px;
+    color:#777;
+    transform: translateX(-150px);
+}
+.contact{
+    display: flex;
+    justify-content: center;   
+}
+
+.container form{
+    width:90%;
+    position:absolute;
+    top:100px;
+    left:20%;
+    transition: 0.5s;
+    margin-right: 200px;
+    
+}
+form input{
+    width:60%;
+    padding:10px 5px;
+    margin:5px 0;
+    border:0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background: transparent;
+}
+::placeholder{
+    color:#777;
+}
+.btn-box{
+    width:100%;
+    margin:30px auto;
+    text-align: center;
+    transform: translateX(-150px);
+    
+}
+form button{
+    width:110px;
+    height:35px;
+    margin: 0 10px;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    border-radius:30px;
+    border:0;
+    outline: none;
+    color:#fff;
+    cursor:pointer;
+}
+
+#form2{
+    left:1300px;
+    transform: translate(150px,-50px);
+}
+#form3{
+    left:2500px;
+    transform: translate(150px,50px);
+}
+#form3 .radio{
+    width:20px;
+    
+}
+
+.step-row{
+    width:100%;
+    height:40px;
+    margin:0 auto;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px #000;
+    position:relative;
+}
+.step-col{
+    width:80%;
+    text-align:center;
+    color:#333;
+    position:relative;
+}
+#progress{
+    position:absolute;
+    height:100%;
+    width:33%;
+    background:linear-gradient(to right,#ff105f,#ffad06);
+    transition: 1s;
+}
+#progress::after{
+    content: '';
+    height: 0;
+    width:0;
+    border-top:20px solid transparent;
+    border-bottom: 20px solid transparent;
+    position: absolute;
+    right:-20px;
+    top:0;
+    border-left: 20px solid #ffad06;
+
+}
+#total-amount{
+    width:20%;
+    margin-left: 150px;
+    border:1px solid grey;
+}
+#discounted-amount{
+    width:20%;
+    margin-left: 45px;
+    border:1px solid grey;
+}
+#amount-to-pay{
+    width:20%;
+    margin-left: 80px;
+    border:1px solid grey;
+}
+#form2 h3{
+    margin-top: 20px;
+}
+#apply-btn{
+  border-radius:0px;
+  width:80px;
+}
+
+#wrapper {
+    width: 90%;
+    max-width: 34.37em;
+    max-height: 90vh;
+    background-color: #ffffff;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 3em;
+    border-radius: 1em;
+    box-shadow: 0 4em 5em rgba(27, 8, 53, 0.2);
+    visibility: hidden;
+    animation:changebg 5s infinite alternate linear;
+}
+@keyframes changebg {
+    0%{
+        background:#D61355;
+    }
+    25%{
+        background:#F94A29; 
+    }
+    50%{
+        background:#FCE22A; 
+    }
+    75%{
+        background:#30E3DF; 
+    }
+    100%{
+        background:#ff9b85; 
+    }
+}
+
+.open-popup{
+    visibility: visible;
+}
+
+
+  .containerr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  #wheel {
+    max-height: inherit;
+    width: inherit;
+    top: 0;
+    padding: 0;
+  }
+  @keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  #spin-btn {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    height: 26%;
+    width: 26%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    background: radial-gradient(#fdcf3b 50%, #d88a40 85%);
+    color: #c66e16;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+  }
+  img {
+    position: absolute;
+    top: 23%;
+    right: -20%;
+    width:40%;
+  }
+  #final-value {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1.5em;
+    color: #202020;
+    font-weight: 500;
+  }
+  #final-value .button{
+      background: blue;
+      color: black;
+      padding: 7px 10px;
+      display: block;
+      margin: 10px 40%;
+      border-radius: 50px;
+  }
+  
+  #final-value label{
+      font-size: 20px;
+      font-weight: 600;
+      color: #171717;
+      
+  }
+  
+  #final-value #offer-code{
+     
+      border: none;
+      outline: none;
+      color: black;
+      padding: 5px;
+      border-radius: 5px;
+  }
+  
+  #final-value button{
+      background-color: #171717;
+      padding: 4px 15px;
+      color: whitesmoke;
+      border-radius: 50px;
+      cursor:pointer;
+  }
+  #final-value button:hover{
+    background-color: white;
+    color:#171717;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    font-size: 50px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }

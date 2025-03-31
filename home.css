@@ -1,0 +1,729 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.logo-container {
+    perspective: 800px;
+  }
+  
+  .logo {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateLogo 10s infinite linear;
+  }
+  
+  .front,
+  .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .front {
+    transform: rotateY(0deg);
+    height: 40px;
+    width: 40px;
+  }
+  
+  .back {
+    transform: rotateY(180deg);
+    height: 40px;
+    width: 40px;
+  }
+
+  .back img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .front img{
+    height: 100px;
+    width: 100px;
+  }
+  
+  @keyframes rotateLogo {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+.slider{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+}
+#slideImg{
+    width: 100%;
+    height: 100%;
+    animation: zoom 5s linear infinite;
+}
+@keyframes zoom 
+{
+    0%{
+        transform: scale(1.3);
+    }
+    15%{
+        transform:scale(1);
+    }
+    85%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    position: absolute;
+    top: 0;
+}
+.navbar{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    margin: 35px auto;
+}
+.logo{
+   font-size: 30px;
+   font-weight: bold;
+   letter-spacing: 1.5px;
+}
+.logo p{
+    float: left;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    /* margin-right: 90px; */
+    margin-left: 100PX;
+    margin-bottom: 100px;
+}
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 32px;
+}
+nav ul li a:hover{
+    color:#FFE4C4;
+    text-decoration: underline coral;
+    transition: .5s ease-in-out;
+}
+
+nav ul li .active{
+    color: black;
+}
+#content{
+    width: 60%;
+    margin:160px auto 0;
+    text-align: center;
+    color: #FFE4C4;
+    transform: translateY(-100px);
+}
+#content h1{
+    font-size: 60px;
+}
+#content h3{
+    width: 80%;
+    margin: 20px auto 100px;
+    font-weight: 100;
+    line-height: 25px;
+}
+button{
+    width:200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #FFE4C4;
+    background: #490303;
+    color:#FFE4C4;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.5s;
+}
+button:hover{
+    background: transparent;
+    border: 2px sollid #FFE4C4;
+}
+
+
+/* Kishore Part*/
+
+#aboutus{
+    background-image: url('/images/k1.jpg'); 
+    background-size: cover;
+    height:100vh;
+    width: 100%;
+    padding-top:80px;
+}
+
+#aboutpic1{
+    height: 30%;
+    transform: translate(50px,-220px);
+    border-radius: 20px;
+    box-shadow: 10px 0px 20px black;
+}
+
+#aboutpic2{
+    height: 30%;
+    float: right;
+    transform: translate(-40px,-220px);
+    border-radius: 20px;
+    box-shadow: 10px 0px 20px black;
+}
+
+#headabout{
+    font-size: 25px;
+    color: #FFE4C4 ;
+    text-align: center;
+    margin: 20px;
+    text-shadow: 5px 0px 3px black;
+}
+
+.text{
+    color: #FFE4C4;
+    font-size: 20px;
+    width: 40%;
+    text-align: center;
+    margin-left: 30% ;
+    padding: 20px;
+    text-shadow: 5px 0px 3px black;
+}
+
+.t1{
+    font-size: 25px;
+    color: #490303;
+    text-shadow: 5px 0px 3px #FFE4C4;
+    margin-bottom: 50px;
+}
+
+/* Kishore Over */
+
+
+/*Sasi Part */
+
+.menu{
+    position: relative;
+    left: 280px;
+    top: 60px;
+    width: 60%;
+    text-align: center;
+    height: 500px;
+    overflow: hidden;
+}
+
+.menu-title-1{
+    margin: 10px;
+    padding-bottom: 5px;
+    height: 2px;
+    width: 600px;
+    color: #490303;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    padding-left: 160px;
+}
+
+.menu-title-2{
+    margin: 20px 0;
+    padding-top: 3px;
+    height: 3px;
+    color: #490303;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+.menu-content1{
+    margin: 40px 0;
+    color: #490303;
+    font-style: italic;
+    font-family: "Book Antiqua", Palatino;
+    font-size: 15px;
+    font-weight: 800;
+    /* background-color: rgb(255,228,196,.6); */
+    /* opacity: .9; */
+}
+
+.menu-item{
+    display: flex;
+    gap: 8px;
+    padding: 5px;
+    animation: 16s slider infinite;
+    animation-delay: 1s;
+    position: relative;
+}
+
+.menu-item:hover{
+    animation-play-state: paused;
+}
+
+.menu1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    /* border: 2px solid rgb(82, 79, 79); */
+}
+
+.menu-item img{
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.menu-img-cap{
+    margin-top: 5px;
+    padding: 3px;
+    height: 25px ;
+    width: 150px;
+    font-family: 'Copperplate';
+    font-style: italic;
+}
+
+
+@keyframes slider {
+	0% {
+        left: 0%;
+    }
+
+    10%{
+        left: -20%;
+    }
+    20%{
+        left: -40% ;
+    }
+    35%{
+        left: -65%;
+    }
+    50%{
+        left: -80%;
+    }
+    65%{
+        left: -95%;
+    }
+    80%{
+        left: -120%;
+    }
+    90%{
+        left: -155%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+
+/* Sasi part Over */
+
+/* Dayal Part */
+
+#container{
+    text-align: center;
+    padding: 50px;
+    background-color: #490303;
+    color: #ffe4c4;
+    height: 300px;
+}  
+
+#container h1,h3,h4{
+    padding: 10px;
+    text-shadow: 5px 5px 5px #171717;
+    font-family: poppins;
+}
+
+#main{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+#container h4,text{
+    text-align: left;
+    font-family: poppins;
+    font-size: 17px;
+}
+
+.in{
+    width: 500px;
+}
+
+#btn{
+    height: fit-content;
+    width: fit-content;
+    text-decoration: none;
+    color: #490303;
+    padding: 10px 15px;
+    background-color: #ffe4c4;
+    border-radius: 20px;
+    margin-left: 635px;
+    margin-top: 40px;
+}
+
+#btn a{
+    text-decoration: none;
+    color: #490303;
+}
+
+#btn:hover{
+    background-color: transparent;
+    color: #ffe4c4;
+    border: 2px solid #ffe4c4;
+}
+
+#btn:hover a{
+    color: #ffe4c4;
+}
+
+/* Dayal Part Over */
+
+/* Karthi Part */
+
+.service-main{
+    margin: 0;
+    width: 100%;
+    height: 800px;
+    background-image: url(images/blackbg0.jpg);
+    background-repeat: repeat-x;
+    background-size: cover;
+}
+
+.service-head{
+    padding: 30px;
+    color: #ffe4c4;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 120px;
+}
+.overall-cont{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 90px;
+}
+
+.overlay1{
+    width: 350px;
+    margin: 5px;
+    text-align: right;
+}
+
+.overlay0{
+    width: 300px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.section-title{
+    color: #ffe4c4;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 18px;
+}
+
+.section-content{
+    color: #ffe4c4;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+}
+
+.image1{
+    position: absolute;
+    left: 35%;
+    padding: 20px;
+    transform: translateY(-120px);
+}
+
+.section-title1{
+    color: #ffe4c4;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    margin-bottom: 38px;
+}
+
+.image:hover{
+    transform: scale(1.3);
+    transition: .5s ease;
+}
+
+/* Karthi Part Over */
+
+/* Hemanth Part */
+
+.review{
+    width: 100%;
+    height: 100%;
+}
+
+.review h1{
+    margin-top: 20px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #490303;
+}
+
+.review .review_box{
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+
+.review .review_box .review_card{
+    width: 350px;
+    height: 335px;
+    background-color: #490303;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+
+.review .review_box .review_card .review_profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_profile{
+    transform: translateY(-60px);
+}
+
+.review .review_box .review_card .review_profile img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #ffe4c4;
+}
+
+.review .review_box .review_card .review_text{
+    text-align: center;
+    color: #ffe4c4;
+}
+
+.review .review_box .review_card .review_text .name{
+    color: #ffe4c4;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card .review_text p{
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+}
+
+/*Give*/
+
+.give{
+    width: 100%;
+    height: 70vh;
+}
+
+.give h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #490303;
+}
+.give .give_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.give .give_main .give_image img{
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px black;
+}
+
+.give .give_main form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.give .give_main form .input p{
+    line-height: 25px;
+    color: #490303;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.give .give_main form .input{
+    margin: 5px;
+}
+
+.give .give_main form .input input{
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #490303;
+    background: #ffe4c4;
+    color: #490303;
+    outline: none;
+    border-radius: 3px;
+}
+
+.give .give_main form .give_btn{
+    padding: 10px;
+    background: #490303;
+    color: #ffe4c4;
+    width: 30%;
+    text-align: center;
+    margin-top: 50px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.give .give_main form .give_btn:hover{
+    background-color: #ffe4c4;
+    color: #490303;
+    border: 2px solid #490303;
+}
+
+/* Hemanth Part Over */
+
+/* Malathy Part */
+
+.foot{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.footer{
+    text-decoration: none;
+    color: bisque;
+    padding-right: 20px;
+}
+.footh{
+    background-color: #490303;
+    color: #ffe4c4;
+
+}
+.insta{
+    width:30px;
+    height:30px;
+    display:inline-flex;
+    border-radius: 50%;
+}
+.fb{
+    width:30px;
+    height:30px;
+    display:inline-flex;
+    border-radius: 50%;
+}
+.twitter{
+    width:30px;
+    height:30px;
+    display:inline-flex;
+    border-radius: 50%;
+}
+.social-list li a {
+    width: 25px;
+    height: 25px;
+    border: 1px dashed #333;
+    display: inline-block;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 50%;
+    color: #333;
+    font-size: 12px;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s
+}
+
+.margin{
+    text-align: center;
+    margin: 20px;
+    margin-top: 100px;
+    line-height: 30px;
+}
+
+address{
+    line-height: 30px;
+}
+
+#foot{
+    background-color: #ffe4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#foot a img{
+    margin: 10px 20px;
+    padding: 2px;
+}
+
+#margin{
+    color: #490303;
+    float: right;
+    margin-left: 800px;
+}
+
+#contactus{
+    font-size: 25px;
+}
+
+video{
+    height: 400px;
+    width: 650px;
+    transform: translate(-100px);
+    padding: 20px;
+}
+
+#whatsapp{
+    position: fixed;
+    bottom: 300px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+}
+/* Malathy Part Over */
+

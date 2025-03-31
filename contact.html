@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+    <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            "We're just a message away - contact us for any questions or assistance you need!"
+          
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="img/location.png" class="icon" alt="" />
+              <p>Address: 151,10th Avenue,Anna Nagar,Chennai-600040</p>
+            </div>
+            <div class="information">
+              <img src="img/email.png" class="icon" alt="" />
+              <p>Email: info@hotnspicy.com</p>
+            </div>
+            <div class="information">
+              <img src="img/phone.png" class="icon" alt="" />
+              <p>Phone:+91 0987665432</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span> 
+            <form onsubmit="return validateForm()" action="contact.html" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" id="name" name="name"  class="input" pattern="[A-Za-z]+" required />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <label for="">Email</label>
+              <input type="email"  id="email"  name="email" class="input" required/>
+              <span>Email</span><br>
+              <span id="emailError" style="color: rgb(254, 252, 252);"></span>
+            </div>
+            <div class="input-container">
+              <input type="tel" id="phone" name="phone" class="input" pattern="[0-9]+" required>
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>  
+
+
+
+    <!--newsletter-->
+    <div class="popup-container">
+      <div class="popup">
+        <h2>Subscribe to our Newsletter</h2>
+        <form>
+          <input type="email" placeholder="Enter your email">
+          <button type="submit" class="subscribe">Subscribe</button>
+        </form>
+        <p>Stay updated with our latest news and promotions!</p>
+        <button class="close-btn">&times;</button>
+      </div>
+    </div>      
+
+
+    <script src="contact.js">
+    </script><!--java script added-->
+  </body>
+</html>

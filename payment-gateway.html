@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+    <link rel="stylesheet" href="payment-gateway.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="payment" style="padding-top: 80px;">          
+            <div class="form">
+                <div class="card space icon-relative">
+                    <label class="label">Card holder:</label>
+                    <input type="text" class="input" placeholder="Card Holder Name" required pattern="[A-Za-z ]+">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="card space icon-relative">
+                    <label class="label">Card number:</label>
+                    <input type="text" class="input" required pattern="[0-9]{16}" placeholder="Card Number">
+                    <i class="far fa-credit-card"></i>
+                </div>
+                <div class="card-grp space">
+                    <div class="card-item icon-relative">
+                        <label class="label">Expiry date:</label>
+                        <input type="text" name="expiry-data" required pattern="(0[1-9]|1[0-2])\/[0-9]{2}" class="input"  placeholder="00 / 00">
+                        <i class="far fa-calendar-alt"></i>
+                    </div>
+                    <div class="card-item icon-relative">
+                        <label class="label">CVC:</label>
+                        <input type="text" class="input" required pattern="[0-9]{3}" placeholder="000">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                </div>
+                
+                <div class="btn">
+                Pay
+                </div> 
+            </div>
+        </div>
+        <div>
+            <div class="payment qr">
+                <div class="upi-code-container">
+                    <div class="upi-code-description">
+                        <h3>Enter your UPI ID</h3>
+                        <input type="text" name="upi" placeholder="UPI ID" class="input">
+                    </div>
+                    <div id="pay">Pay</div>
+                </div>
+                <hr style="height: 5px; background-color: black;">
+                <img src="/images/OR.jpeg" height="50px" width="50px" id="or">
+                <div class="qr-code-container">
+                    <h3>Scan QR Code</h3>
+                    <div class="qr-code-image">
+                        <img src="/images/qr code.jfif" alt="QR Code">
+                    </div>
+                    </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <script src="payment.js">
+    </script>
+</body>
+</html>
+

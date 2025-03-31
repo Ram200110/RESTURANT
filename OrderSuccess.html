@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="OrderSuccess.css">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main blur">
+        <div class="wrapper"> 
+            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+               <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> 
+               <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+          </svg>
+        </div>
+        <div>
+            <p> Your Order Placed <br>Successfully </p>
+        </div>
+        <div>
+            <button class="submit blur" onclick="openPopup()">OK</button>
+        </div>
+    </div>
+    
+    
+    <div class="popup" id="popup">
+        <h1>Help us Improve!</h1>
+        <p>We'd welcome your Feedback!</p>
+        <textarea placeholder="Summary"></textarea>
+
+        <h2>Rate Us</h2>
+        <p>How was your Experience so far ?</p>
+        <div class="rating">
+            <input type="radio" name="star" id="star1" checked><label for="star1">
+            </label>
+            <input type="radio" name="star" id="star2"><label for="star2">
+            </label>
+            <input type="radio" name="star" id="star3" ><label for="star3">
+            </label>
+            <input type="radio" name="star" id="star4"><label for="star4">
+            </label>
+            <input type="radio" name="star" id="star5" ><label for="star5">
+            </label>
+        </div>
+
+        
+        <a href="login.html"><button id="next" onclick="closePopup()">Submit Feedback</button><br></a> 
+        <button id="skip" onclick="closePopup()">Skip</button>
+    </div>
+
+
+    <script src="OrderSuccess.js"></script>
+    <!-- Confetti  JS-->
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function() {
+                confetti.stop()
+            }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+        };
+
+        start();
+        stop();
+    </script>
+</body>
+</html>
